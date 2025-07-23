@@ -1,20 +1,13 @@
-# Static
-app:
-  name: 'FaithNode'
-  navTitle: 'Вики {{ app.name }}'
+##
+# Файл для хранения общих переменных
+#
+# Использование: `{{ organization.name }}`, `{{ pages.index }}`
+#
+# Можно использовать переменные из app.yml, variables.yml
+#
+# Заполняется один раз при старте приложения
+##
 
-meta:
-  title: >-
-    {{ app.name }} • {{ default page.name 'Вики' }}
-  description: 'Хостинг'
-  keywords: 'Хостинг Майнкрафт Хост'
-  category: 'Хостинг'
-  authors:
-    roma4ka: 'https://github.com/poma4ka'
-  locale: 'ru_RU'
-
-
-# Dynamic
-page:
-  name:
-  path:
+# Локализация страниц
+pages:
+  index: 'Навигатор'

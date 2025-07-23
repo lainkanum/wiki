@@ -1,0 +1,153 @@
+---
+title: 'Страница с примерами'
+description: 'Описание страницы в метаданных'
+showUpdatedAt: false
+showEditUrl: false
+keywords: 'Уникальные кейворды страницы'
+---
+
+# {{ meta.title }}
+
+## Выделения
+
+Lorem ipsum dolor sit amet, `consectetur` adipisicing elit. At eius enim eos error exercitationem impedit,
+libero maiores nihil non obcaecati optio provident,
+quidem quo rem sapiente sequi sit suscipit ullam. Lorem [blank](# "blank") [download](# "download") dolor sit amet, www.example.com consectetur adipisicing elit.
+Ad, asperiores **aspernatur assumenda** culpa *debitis exercitationem* in  ~~provident~~ quia <kbd>Alt</kbd> voluptatem! Consequuntur
+earum in ipsum iusto magnam <mark>neque perferendis veritatis</mark>. Delectus.
+
+***
+
+## Цитата
+
+> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aperiam consequatur cupiditate eos error
+> exercitationem ipsam iste natus necessitatibus neque quae quaerat quas quo totam voluptas, voluptatem?
+> A animi asperiores blanditiis doloremque dolores dolorum eaque et excepturi impedit minus natus perferendis quod
+> repellat reprehenderit rerum, saepe velit veniam voluptas. Accusantium aliquam asperiores, assumenda at beatae consequatur
+> culpa cum cumque earum illum incidunt maiores modi natus neque nesciunt nihil, officia placeat reiciendis repellendus saepe
+> sequi tempora unde vel velit voluptatibus? Aliquid aspernatur beatae blanditiis commodi consequuntur cumque doloribus ea,
+> est facilis fugiat illum incidunt maiores odit perferendis provident recusandae, reiciendis ut veritatis voluptates, voluptatum.
+
+---
+
+## Фигура
+
+<Figure title="Красивая картинка">
+    ![](/assets/example.jpg)
+</Figure>
+
+---
+
+## Блок кода
+
+```js
+const WikiModule = ({ content, title, menu }: WikiModuleProps) => {
+    return (
+        <div className={classes.wiki}>
+            <div className={classes.menuWrapper}>
+                <WikiMenu menu={menu} className={classes.menu} />
+            </div>
+            <WikiContent
+                title={title}
+                content={content}
+                className={classes.content}
+            />
+        </div>
+    );
+};
+```
+
+```
+Блок с текстом который можно скопировать
+```
+
+---
+
+## Авто-сетка
+
+<Grid width="300">
+
+    ![](/assets/example.jpg)
+
+    ![](/assets/example.jpg)
+
+</Grid>
+
+---
+
+## Списки
+
+- Lorem.
+- Lorem.
+  - Lorem.
+  - Lorem.
+  - Lorem.
+- Lorem.
+
+1. Lorem.
+2. Lorem.
+ 1. Lorem.
+ 1. Lorem.
+ 2. Lorem.
+3. Lorem.
+
+---
+
+## Задачи
+
+* [ ] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, soluta?
+* [x] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, tenetur.
+* [x] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut.
+* [x] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quaerat?
+
+1. [ ] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ut.
+2. [x] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, deserunt!
+3. [ ] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, necessitatibus?
+4. [x] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, eum.
+
+---
+
+## Таблица + отображение цвета
+
+| **Код** | **Название**     | **Цвет** |
+|:--------|:-----------------|:---------|
+| `&0`    | Чёрный           | <Hex>#000000</Hex> |
+| `&1`    | Тёмно-синий      | <Hex>#0000AA</Hex> |
+| `&2`    | Тёмно-зелёный    | <Hex>#00AA00</Hex> |
+| `&3`    | Темно-бирюзовый  | <Hex>#00AAAA</Hex> |
+| `&4`    | Тёмно-красный    | <Hex>#AA0000</Hex> |
+| `&5`    | Тёмно-фиолетовый | <Hex>#AA00AA</Hex> |
+
+---
+
+## Цветной блок
+
+<ColorBlock color="green">
+    Привет, а я омлет
+</ColorBlock>
+
+<ColorBlock color="red">
+    Я очень важная вещь!!!
+</ColorBlock>
+<ColorBlock color="#ff00ff">
+    А у меня свой цвет
+</ColorBlock>
+
+---
+
+## Открывающийся список
+
+<Details summary="Lorem ipsum dolor sit amet.">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum provident reiciendis reprehenderit
+    suscipit veniam vitae. Consequuntur debitis enim et eveniet inventore placeat quibusdam quis ratione vel veniam.
+    Aspernatur commodi debitis dolore eos error esse eveniet ex excepturi fugiat ipsam labore molestias ratione, sed
+    sint sunt tempora veritatis, voluptate! Natus!
+</Details>
+<Details
+    summary="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dignissimos eveniet fugiat fugit in ipsam itaque iusto laudantium minima natus neque non porro qui quo rerum, sapiente vero voluptas voluptatum.">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorum provident reiciendis reprehenderit
+    suscipit veniam vitae. Consequuntur debitis enim et eveniet inventore placeat quibusdam quis ratione vel veniam.
+    Aspernatur commodi debitis dolore eos error esse eveniet ex excepturi fugiat ipsam labore molestias ratione, sed
+    sint sunt tempora veritatis, voluptate! Natus!
+</Details>
+

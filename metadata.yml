@@ -1,0 +1,34 @@
+##
+# Файл для хранения метаданных каждой страницы
+#
+# Префикс: `meta`
+# Использование: `{{ meta.name }}`, `{{ meta.page.path }}`
+#
+# Можно использовать переменные из app.yml, metadata.yml, variables.yml
+#
+# Заполняется для каждой отдельной страницы
+#
+# Можно перезаписать внутри markdown файлов, с помощью директивы вверху страницы (кроме page блока):
+# ---
+# title: '{{ app.name }} • Примеры'
+# ---
+##
+
+title: >-
+  {{ app.name }} • {{#if (equals meta.page.statusCode '500')}}Ошибка{{else if (equals meta.page.statusCode '404')}}Пусто{{else}}{{ meta.page.name }}{{/if}}
+description: 'Хостинг серверов Minecraft с высокой производительностью'
+keywords: 'хостинг, майнкрафт, сервер, игровой хостинг, minecraft hosting'
+category: 'Хостинг'
+locale: 'ru_RU'
+authors:
+  roma4ka: 'https://github.com/poma4ka'
+showUpdatedAt: true
+showEditUrl: true
+
+# Автоматически перезаписывается значениями из навигации и данными страницы
+# Здесь можно установить значения по умолчанию
+page:
+  name: 'Вики'
+  path: '/'
+  statusCode: 200
+
