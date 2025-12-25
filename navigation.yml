@@ -16,8 +16,6 @@
 links:
   - path: /
     title: "↩️ {{ pages.index }}"
-  - path: /about
-    title: "📋 О нас"
   - path: /guides
     title: "⚙️ Гайды"
     links:
