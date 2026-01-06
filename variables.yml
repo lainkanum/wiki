@@ -60,6 +60,7 @@ links:
   cloudflareUrl: https://www.cloudflare.com/
   motdCreatorUrl: https://mctools.org/motd-creator
   ResourceUploaderUrl: https://mc-packs.net/
+  FlagsConfigureUrl: https://flags.sh/
 # Ссылки для скачивания стороннего ПО
   filezillaDownloadUrl: https://filezilla-project.org/
   winscpDownloadUrl: https://winscp.net/eng/download.php
