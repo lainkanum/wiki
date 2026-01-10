@@ -1,0 +1,43 @@
+---
+title: 'Автоматизация действий CRON'
+---
+
+# {{ metadata.title }}
+
+<ColorBlock color="yellow">
+    [CRON]({{ links.cronWikiUrl }} "blank") - это утилита-планировщик задач в Unix-подобных операционных системах, которая позволяет автоматически выполнять скрипты, команды или программы в заданное время.
+</ColorBlock>
+
+### Синтаксис CRON
+
+```
+* * * * *
+│ │ │ │ │
+│ │ │ │ └─── день недели (0-6) (воскресенье = 0)
+│ │ │ └───── месяц (1-12)
+│ │ └─────── день месяца (1-31)
+│ └───────── час (0-23)
+└─────────── минуты (0-59)
+```
+
+### Примеры использования
+
+<Figure title="Каждую минуту.">
+    ![](/assets/pterodactyl/cron/cron-1.png)
+</Figure>
+
+<Figure title="Каждый день в 03:30.">
+    ![](/assets/pterodactyl/cron/cron-2.png)
+</Figure>
+
+<Figure title="Каждые 15 минут.">
+    ![](/assets/pterodactyl/cron/cron-3.png)
+</Figure>
+
+<Figure title="По будням в 9 утра.">
+    ![](/assets/pterodactyl/cron/cron-4.png)
+</Figure>
+
+<sub>
+    Автор статьи: [Watereks](https://github.com/Watereks "blank").
+</sub>

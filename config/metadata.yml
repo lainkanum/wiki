@@ -1,0 +1,59 @@
+##
+# Файл для хранения метаданных по умолчанию
+#
+# Можно перезаписать внутри группы. Для этого нужно создать дополнительный файл metadata.yml внутри директории pages/...
+#
+# Приоритет метаданных:
+# 1. (Самый низкий) - /metadata.yml
+# 2. - /pages/**/metadata.yml
+# 3. (Самый высокий) - Метаданные внутри (mdx|md) файла
+#
+# Можно перезаписать внутри markdown файлов, с помощью директивы вверху страницы:
+# ---
+# htmlTitle: '{{ app.name }} • Примеры'
+# ---
+#
+# Можно использовать на страницах с префиксом metadata:
+# `{{ metadata.title }}`, `{{ metadata.authors }}`
+#
+##
+
+# Заголовок страницы
+title: 'Вики'
+# HTML заголовок страницы
+htmlTitle: '{{ app.name }} • {{ metadata.title }}'
+# Заголовок страницы в навигаторе
+navTitle: '{{ metadata.title }}'
+# Краткое описание страницы
+description: 'Вики хостинга с подробным описанием функционала.'
+# Ключевые слова страницы
+keywords: 'minecraft хостинг, сервер minecraft, аренда minecraft сервера, minecraft hosting, игровой хостинг minecraft, купить minecraft сервер, хостинг для minecraft, minecraft java хостинг, minecraft bedrock хостинг, хостинг с модами, pixelmon сервер хостинг, skyblock хостинг, prison сервер, pvp хостинг minecraft, дешевый minecraft хостинг, лучший хостинг minecraft, minecraft хостинг без лагов, высокопроизводительный хостинг, хостинг с защитой от ddos, облачный minecraft хостинг, выделенный сервер minecraft, vds minecraft, vps minecraft, виртуальный сервер minecraft, управление minecraft сервером, поддержка 24/7, быстрый хостинг, надежный хостинг minecraft, minecraft хостинг россии, бесплатный minecraft сервер, премиум хостинг, vds хостинг, арендовать vds под minecraft'
+# Категория страницы
+category: 'Хостинг'
+# Язык страницы
+locale: 'ru_RU'
+# Авторы страницы
+authors:
+  roma4ka: 'https://github.com/poma4ka'
+  watereks: 'https://github.com/watereks'
+# Скрывать ли страницу из навигации
+hidden: false
+# Строгое сравнение пути, например при подсветке активной страницы
+strictPath: true
+# Показывать ли время редактирования страницы
+showUpdatedAt: true
+# Показывать ли ссылку на редактирование страницы
+showEditUrl: true
+# Показывать ли заголовки страницы (навигация справа)
+showOnThisPage: true
+# Показывать ли последнего редактора страницы
+showEditor: true
+# Редирект на другую страницу
+redirect: null
+# Путь к файлу страницы, не рекомендуется менять
+fileName: null
+# Относительный URL страницы, не рекомендуется менять
+path: null
+
+# Заголовок группы навигации.
+navGroupTitle: '{{ metadata.path }}'

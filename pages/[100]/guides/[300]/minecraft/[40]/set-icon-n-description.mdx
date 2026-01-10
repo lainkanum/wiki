@@ -1,0 +1,96 @@
+---
+title: 'Установка своей иконки, описания и слотов на сервере'
+---
+
+# Как установить свою иконку, описание и слоты для сервера Minecraft?
+
+## 1. Установка своей иконки
+
+### 1.1 Изменение размера своей иконки
+
+Для начала, чтобы установить свою иконку, необходимо поменять её размер на `64x64` пикселя.
+
+Изменить размер можно на онлайн редакторах изображения или через Adobe Photoshop.
+
+### 1.2 Установка иконки на сервер
+
+Переименуйте название файла вашей иконки на `server-icon.png`, далее перенесите файл в корневую папку сервера.
+
+### 1.3 Перезагрузите сервер и иконка будет установлена.
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/ready-icon.png)
+</Figure>
+
+---
+
+## 2. Установка своего описания к серверу.
+
+### 2.1 Создайте свой текст описания в нужном формате для Minecraft:
+
+ - [Создать текст]({{ links.motdCreatorUrl }} "blank")
+
+На данном сайте вы можете:
+ - Выбрать цвет для текста
+ - Отцентрировать текст
+ - Поменять стиль текста
+
+После написания текста, и выбора желаемого нам форматирования, копируем формат для Spigot-версии.
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/motd-create.png)
+</Figure>
+
+### 2.2 Вставьте скопированный формат
+
+Далее после копирования готового формата нашего текста, его необходимо вставить в файлы сервера
+
+Откройте файл `server.properties`
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/file-manager.png)
+</Figure>
+
+Далее, найдите строку `motd=` и вставьте туда скопированный формат текста:
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/change-motd.png)
+</Figure>
+
+### 2.3 Перезагрузите сервер и все будет готово!
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/ready-motd.png)
+</Figure>
+
+---
+
+## 3. Установка своего количества допустимых игроков на сервере (слотов)
+
+### 3.1 Откройте файл `server.properties`
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/file-manager.png)
+</Figure>
+
+### 3.2 Измените количество слотов
+
+В файле `server.properties` нам нужно найти строку `max-players=20`
+Измените её на любое желаемое значение
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/max-players.png)
+</Figure>
+
+### 3.3 Перезагрузите сервер, после этого установится указанное значение слотов.
+
+<Figure>
+    ![](/assets/minecraft/set-icon-n-description/ready-slots.png)
+</Figure>
+
+<sub>
+    Автор статьи: [Watereks](https://github.com/Watereks "blank").
+</sub>
+
+
+

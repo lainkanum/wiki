@@ -1,0 +1,92 @@
+##
+# Файл для хранения глобальных переменных
+#
+# Использование: `{{ organization.name }}`, `{{ pages.index }}`
+##
+
+# Директива app заполняется автоматически данными приложения
+app:
+  name: '-'
+  navTitle: '-'
+  url: '-'
+
+organization:
+  name: '{{ app.name }}'
+  legal:
+    name: 'ИП Глушинский Роман Дмитриевич'
+    inn: '524926071605'
+    ogrn: '324527500027446'
+    createdAt: 11 Мая 2021
+  contact:
+    emails:
+      general: 'contact@faithnode.com'
+      support: 'help@faithnode.com'
+      abuse: 'abuse@faithnode.com'
+      partner: 'partner@faithnode.com'
+      list:
+        - email: '{{ organization.contact.emails.general }}'
+          description: 'Email для общих вопросов'
+        - email: '{{ organization.contact.emails.support }}'
+          description: 'Email для технической поддержки'
+        - email: '{{ organization.contact.emails.abuse }}'
+          description: 'Email для сообщений о нарушениях'
+        - email: '{{ organization.contact.emails.partner }}'
+          description: 'Email для рекламы и предложений'
+    social:
+      vk: 'https://vk.com/faithnode'
+      telegram: 'https://t.me/faithnode'
+      discord: 'https://discord.gg/S7cbjQZJ4F'
+
+# Данные платежей
+payments:
+  maxAllowRefundDays: 14
+
+domainsForServers:
+  serverplay: 'ВашеНазвание.serverplay.ru'
+  20tps: 'ВашеНазвание.20tps.ru'
+
+pterodactyl:
+# Характеристики
+  cpu: 'AMD Ryzen 9 5950X'
+
+questions:
+  maxAllowRefundDays: 14
+
+links:
+# Важные ссылки
+  reviewsUrl: https://discord.com/channels/841363276620103770/992507554628390955
+  siteUrl: https://faithnode.host
+  # Прочие ссылки
+  cronWikiUrl: https://ru.wikipedia.org/wiki/Cron
+  domainBuyUrl: https://www.google.com/search?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD
+  cloudflareUrl: https://www.cloudflare.com/
+  motdCreatorUrl: https://mctools.org/motd-creator
+  ResourceUploaderUrl: https://mc-packs.net/
+  FlagsConfigureUrl: https://flags.sh/
+# Ссылки для скачивания стороннего ПО
+  filezillaDownloadUrl: https://filezilla-project.org/
+  winscpDownloadUrl: https://winscp.net/eng/download.php
+# Ссылки для скачивания ядер Minecraft
+  velocityUrl: https://papermc.io/downloads/velocity
+  bungeecordUrl: https://www.spigotmc.org/wiki/bungeecord/
+  waterfallUrl: https://papermc.io/downloads/waterfall
+  vanillaUrl: https://www.minecraft.net/ru-ru/download
+  forgeUrl: https://files.minecraftforge.net/
+  fabricUrl: https://fabricmc.net/
+  paperUrl: https://papermc.io/downloads/paper
+  pufferfishUrl: https://pufferfish.host/downloads
+  purpurUrl: https://purpurmc.org/
+  mohistUrl: https://mohistmc.com/
+
+versions:
+# Версии Minecraft ядер
+  velocity: '1.16.4 - Последняя'
+  waterfall: '1.11 - 1.21'
+  bungeecord: '1.8.8 - Последняя'
+  vanilla: 'Последняя'
+  forge: '1.6.4 - Последняя'
+  fabric: '1.14 - Последняя'
+  paper: '1.8.8 - Последняя'
+  pufferfish: '1.17.1 - 1.21.8'
+  purpur: '1.14.1 - 1.21.10'
+  mohist: '1.7.10 | 1.12.2 | 1.16.5 | 1.18.2 | 1.19.2 | 1.19.4 | 1.20.1 | 1.20.2 | 1.21.4'
