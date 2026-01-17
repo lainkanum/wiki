@@ -1,0 +1,90 @@
+---
+title: 'Подключение к SFTP с SSH ключом'
+---
+
+# Подключение к серверу по протоколу SFTP, с использованием SSH ключа.
+
+<ColorBlock color="yellow">
+    Ваш SSH ключ распространяется на все ваши сервера.
+</ColorBlock>
+
+## 1. Сгенерируйте [SSH ключ]({{ links.sshGenerateUrl }} "blank"):
+
+На данном сайте вам требуется сгенерировать SSH ключ типа `ed25519`. в строке `Passphrase` можете указать свой произвольный пароль, который будет запрашиваться при использовании SSH ключа.
+
+<Figure>
+    ![](/assets/sftp/ssh/generate-ssh.png)
+</Figure>
+
+---
+
+## 2. Сохраняем `Public key` и `Private key`
+
+Теперь нам требуется сохранить `Public key` и `Private key` на компьютер:
+
+Private key
+1. Создайте текстовый файл `id_rsa` в папке по пути `C:\Users\ВАШЕ-ИМЯ-ПОЛЬЗОВАТЕЛЯ\.ssh`
+2. Вставьте в этот текстовый файл свой `Private key`
+3. Сохраните
+4. Уберите расширение файлу
+
+Public key
+1. Создайте текстовый файл `public` в папке по пути `C:\Users\ВАШЕ-ИМЯ-ПОЛЬЗОВАТЕЛЯ\.ssh`
+2. Вставьте в этот текстовый файл свой `Public key`
+3. Сохраните.
+
+<ColorBlock color="red">
+    Не передавайте свой Private key и файл id_rsa никому ни в коем случае.
+</ColorBlock>
+
+<Figure>
+    ![](/assets/sftp/ssh/save-ssh.png)
+</Figure>
+
+---
+
+## 3. Добавляем SSH ключ на Pterodactyl панель:
+
+Название ключу можете дать произвольное
+
+В поле `публичный ключ` вставьте свой `Public key` из файла `public.txt` который мы сделали ранее.
+
+<Figure>
+    ![](/assets/sftp/ssh/ssh-settings.png)
+</Figure>
+
+<Figure>
+    ![](/assets/sftp/ssh/add-ssh.png)
+</Figure>
+
+---
+
+## 4. Подключаеся по SFTP с помощью SSH ключа
+
+### [WinSCP]({{ links.winscpDownloadUrl }} "blank")
+
+Вводим адрес и имя пользователя при подключении
+
+Далее жмем `Ещё` -> `SSH - Аутентификация` -> Жмем 3 точки у `Файл закрытого ключа` и выбираем файл id_rsa с `Private key` который мы ранее создали -> `ОК` -> `Войти`
+
+После этого вы подключитесь к SFTP сервера без использования пароля
+
+<Figure>
+    ![](/assets/sftp/ssh/connect-with-ssh-winscp.png)
+</Figure>
+
+### [FileZilla]({{ links.filezillaDownloadUrl }} "blank")
+
+Вводим адрес и имя пользователя при подключении
+
+Далее жмем `Редактирование` -> `Настройки` -> `SFTP` -> `Добавить файл с ключом` -> Выбираем файл id_rsa с `Private key` который мы ранее создали -> `OK` -> `Быстрое соединение`
+
+После этого вы подключитесь к SFTP сервера без использования пароля
+
+<Figure>
+    ![](/assets/sftp/ssh/connect-with-ssh-filezilla.png)
+</Figure>
+
+<sub>
+    Автор статьи: [Watereks](https://github.com/Watereks "blank").
+</sub>
