@@ -13,12 +13,14 @@ app:
 organization:
   name: '{{ app.name }}'
   legal:
+# Информация об юридическом лице
     name: 'ИП Глушинский Роман Дмитриевич'
     inn: '524926071605'
     ogrn: '324527500027446'
     createdAt: 11 Мая 2021
   contact:
     emails:
+# Почты
       general: 'contact@faithnode.com'
       support: 'help@faithnode.com'
       abuse: 'abuse@faithnode.com'
@@ -33,15 +35,18 @@ organization:
         - email: '{{ organization.contact.emails.partner }}'
           description: 'Email для рекламы и предложений'
     social:
+# Социальные сети
       vk: 'https://vk.com/faithnode'
       telegram: 'https://t.me/faithnode'
       discord: 'https://discord.gg/S7cbjQZJ4F'
 
-# Данные платежей
+
 payments:
+# Данные платежей
   maxAllowRefundDays: 14
 
 domainsForServers:
+# Домены для серверов
   serverplay: 'ВашеНазвание.serverplay.ru'
   20tps: 'ВашеНазвание.20tps.ru'
 
@@ -56,13 +61,14 @@ links:
 # Важные ссылки
   reviewsUrl: https://discord.com/channels/841363276620103770/992507554628390955
   siteUrl: https://faithnode.host
-  # Прочие ссылки
+# Прочие ссылки
   cronWikiUrl: https://ru.wikipedia.org/wiki/Cron
   domainBuyUrl: https://www.google.com/search?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD
   cloudflareUrl: https://www.cloudflare.com/
   motdCreatorUrl: https://mctools.org/motd-creator
   ResourceUploaderUrl: https://mc-packs.net/
   FlagsConfigureUrl: https://flags.sh/
+  sshGenerateUrl: https://8gwifi.org/sshfunctions.jsp
 # Ссылки для скачивания стороннего ПО
   filezillaDownloadUrl: https://filezilla-project.org/
   winscpDownloadUrl: https://winscp.net/eng/download.php
