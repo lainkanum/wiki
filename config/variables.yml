@@ -61,7 +61,7 @@ links:
 # Важные ссылки
   reviewsUrl: https://discord.com/channels/841363276620103770/992507554628390955
   siteUrl: https://faithnode.host
-# Прочие ссылки
+# Ссылки для гайдов
   cronWikiUrl: https://ru.wikipedia.org/wiki/Cron
   domainBuyUrl: https://www.google.com/search?q=%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C+%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD
   cloudflareUrl: https://www.cloudflare.com/
@@ -69,6 +69,43 @@ links:
   ResourceUploaderUrl: https://mc-packs.net/
   FlagsConfigureUrl: https://flags.sh/
   sshGenerateUrl: https://8gwifi.org/sshfunctions.jsp
+# Ссылки для скачивания плагинов
+  vaultUrl: https://www.spigotmc.org/resources/vault.34315/
+  protocolLibUrl: https://www.spigotmc.org/resources/protocollib.1997/
+  placeholderAPIUrl: https://www.spigotmc.org/resources/placeholderapi.6245/
+  CMILibUrl: https://www.spigotmc.org/resources/cmilib.87610/
+  coreProtectUrl: https://modrinth.com/plugin/coreprotect
+  luckPermsUrl: https://modrinth.com/plugin/luckperms/versions?l=paper
+  essentialsXUrl: https://modrinth.com/plugin/essentialsx/versions?l=paper
+  worldEditUrl: https://modrinth.com/plugin/worldedit/versions?l=paper
+  fastAsyncWorldEditUrl: https://modrinth.com/plugin/fastasyncworldedit/versions?l=paper
+  worldGuardUrl: https://modrinth.com/plugin/worldguard/versions?l=paper
+  viaVersionUrl: https://modrinth.com/plugin/viaversion/versions?l=paper
+  geyserUrl: https://modrinth.com/plugin/geyser/versions?l=paper
+  discordSRVUrl: https://modrinth.com/plugin/discordsrv/versions?l=paper
+  tabUrl: https://modrinth.com/plugin/tab-was-taken/versions?l=paper
+  citizensUrl: https://www.spigotmc.org/resources/citizens.13811/
+  decentHologramsUrl: https://modrinth.com/plugin/decentholograms/versions?l=paper
+  multiverseCoreUrl: https://modrinth.com/plugin/multiverse-core/versions?l=paper
+  multiversePortalsUrl: https://modrinth.com/plugin/multiverse-portals/versions?l=paper
+  dynmapUrl: https://modrinth.com/plugin/dynmap/versions?l=paper
+  blueMapUrl: https://modrinth.com/plugin/bluemap/versions?l=paper
+  skinsRestorerUrl: https://modrinth.com/plugin/skinsrestorer/versions?l=paper
+  advancedBanUrl: https://modrinth.com/plugin/advancedbanx/versions?l=paper
+  sparkUrl: https://www.spigotmc.org/resources/spark.57242/
+  chunkyUrl: https://modrinth.com/plugin/chunky/versions?l=paper
+  excellentCratesUrl: https://modrinth.com/plugin/excellentcrates/versions?l=paper
+  deluxeMenusUrl: https://modrinth.com/plugin/deluxemenus/versions?l=paper
+  authMeReloadedUrl: https://modrinth.com/plugin/authmereloaded/versions?l=paper
+  auctionHouseUrl: https://modrinth.com/plugin/auctionhouseplus/versions?l=paper
+  inventoryRollbackPlusUrl: https://modrinth.com/plugin/inventoryrollbackplus/versions?l=paper
+  openInventoryUrl: https://modrinth.com/plugin/open-inventory/versions?l=paper
+  advancedPortalsUrl: https://modrinth.com/plugin/advanced-portals/versions?l=paper
+  motdUrl: https://modrinth.com/plugin/minimotd/versions?l=paper
+  gSitUrl: https://www.spigotmc.org/resources/gsit-modern-sit-seat-and-chair-lay-and-crawl-plugin-1-16-1-21-11.62325/
+  armorStandToolsUrl: https://www.spigotmc.org/resources/armor-stand-tools.2237/
+  vanishUrl: https://modrinth.com/plugin/provanish/versions?l=paper
+  planUrl: https://modrinth.com/plugin/plan/versions?l=paper
 # Ссылки для скачивания стороннего ПО
   filezillaDownloadUrl: https://filezilla-project.org/
   winscpDownloadUrl: https://winscp.net/eng/download.php
